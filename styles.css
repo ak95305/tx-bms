@@ -178,7 +178,7 @@ header nav li a{
     font-size: 18px;
     text-transform: uppercase;
 }
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+.testimonial-sec .owl-carousel .owl-nav button.owl-next, .testimonial-sec .owl-carousel .owl-nav button.owl-prev, .testimonial-sec .owl-carousel button.owl-dot{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -188,7 +188,7 @@ header nav li a{
     align-items: center;
     justify-content: center;
 }
-.owl-theme .owl-dots, .owl-theme .owl-nav{
+.testimonial-sec .owl-theme .owl-dots, .testimonial-sec .owl-theme .owl-nav{
     text-align: left;
 }
 
@@ -217,6 +217,121 @@ header nav li a{
     text-align: center;
     margin: auto;
 }
+
+
+
+/* service excellence */
+.excel-sec{
+    padding: 100px 0;
+    background-image: url(assets/ques-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.excel-sec p{
+    color: #fff;
+}
+.excel-sec .sec-heading{
+    text-align: left;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.excel-sec .feat-card{
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+.excel-sec .feat-card h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.excel-sec .feat-card p{
+    font-size: 14px;
+    max-width: 250px;
+    margin: auto;
+}
+.excel-carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 450px;
+    margin: auto;
+    color: #fff;
+}
+.owl-carousel .owl-stage{
+    display: flex;
+    align-items: center;
+}
+.excel-sec .owl-dots{
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(assets/circle-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.excel-sec .owl-theme .owl-dots .owl-dot span{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #000;
+    background: #fff;
+}
+.excel-sec .owl-theme .owl-dots .owl-dot h5{
+    font-size: 14px;
+    max-width: 80px;
+}
+.excel-sec .owl-theme .owl-dots .owl-dot.active span{
+    background-color: #8FAB50;
+}
+.excel-sec .owl-theme .owl-dots .owl-dot.active span h5{
+    color: #fff;
+}
+.excel-sec .owl-theme .owl-dots .owl-dot.active span svg path{
+    fill: #fff;
+}
+.excel-sec .owl-theme .owl-dots .owl-dot span svg{
+    width: 40px;
+}
+.excel-sec .owl-theme .owl-dots .owl-dot:nth-child(1){
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    position: absolute;
+}
+.excel-sec .owl-theme .owl-dots .owl-dot:nth-child(2){
+    top: 25%;
+    left: 100%;
+    position: absolute;
+    transform: translate(-50%, 0);
+}
+.excel-sec .owl-theme .owl-dots .owl-dot:nth-child(3){
+    top: 100%;
+    right: 0;
+    position: absolute;
+    transform: translate(0, -100%);
+}
+.excel-sec .owl-theme .owl-dots .owl-dot:nth-child(4){
+    top: 100%;
+    left: 0;
+    position: absolute;
+    transform: translate(0, -100%);
+}
+.excel-sec .owl-theme .owl-dots .owl-dot:nth-child(5){
+    top: 25%;
+    right: 100%;
+    position: absolute;
+    transform: translate(50%, 0);
+}
+
 
 
 
