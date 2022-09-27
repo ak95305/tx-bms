@@ -15,10 +15,12 @@ $('.excel-carousel .owl-carousel').owlCarousel({
     items: 1,
 })
 
-jQuery(".excel-carousel .owl-dot").hover(function () {
-    jQuery(this).trigger("click");
+if(window.width > 767){
+    jQuery(".excel-carousel .owl-dot").hover(function () {
+        jQuery(this).trigger("click");
+    }
+    );
 }
-);
 
 
 
