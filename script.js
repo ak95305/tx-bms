@@ -69,3 +69,23 @@ dotBtn.forEach((item, i) => {
     item.appendChild(h5);
 });
 
+
+
+
+
+// mobile drop down
+let dropDown = document.querySelectorAll('.drop-down');
+
+dropDown.forEach(item => {
+    item.addEventListener("click", ()=>{
+        let dropList = item.querySelector(".drop-list");
+        dropList.classList.toggle("active");
+    });
+});
+
+let hamburger = document.querySelector(".hamburger");
+let navMenu = document.querySelector("header nav");
+hamburger.addEventListener("click", ()=>{
+    navMenu.classList.toggle("active");
+    hamburger.classList.toggle("active");
+});
