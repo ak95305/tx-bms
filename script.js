@@ -15,12 +15,11 @@ $('.excel-carousel .owl-carousel').owlCarousel({
     items: 1,
 })
 
-if(window.width > 767){
-    jQuery(".excel-carousel .owl-dot").hover(function () {
+jQuery(".excel-carousel .owl-dot").hover(function () {
+    if (window.screen.width > 767) {
         jQuery(this).trigger("click");
     }
-    );
-}
+});
 
 
 
@@ -79,7 +78,7 @@ dotBtn.forEach((item, i) => {
 let dropDown = document.querySelectorAll('.drop-down');
 
 dropDown.forEach(item => {
-    item.addEventListener("click", ()=>{
+    item.addEventListener("click", () => {
         let dropList = item.querySelector(".drop-list");
         dropList.classList.toggle("active");
     });
@@ -87,7 +86,7 @@ dropDown.forEach(item => {
 
 let hamburger = document.querySelector(".hamburger");
 let navMenu = document.querySelector("header nav");
-hamburger.addEventListener("click", ()=>{
+hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
     hamburger.classList.toggle("active");
 });
