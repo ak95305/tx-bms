@@ -1,0 +1,77 @@
+.hero-about{
+    background-image: url(../assets/ques-bg-low.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    padding-top: 150px;
+}
+.hero-about h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: #333;
+    line-height: 1.4;
+}
+.hero-about p {
+    font-size: 22px;
+    font-weight: 400;
+    color: #333;
+}
+
+.about-imgs{
+    margin-top: 40px;
+}
+
+
+.program-sec p{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.contact-form input, .contact-form textarea{
+    border-radius: .375rem !important;
+}
+
+.contact-form h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+.contact-form p{
+    font-size: 16px;
+    color: #8FAB50;
+    font-weight: 700;
+}
+.contact-form span{
+    color: #666;
+}
+
+
+.terms-cond h1{
+    text-align: center;
+    font-weight: 700;
+    color: #333;
+    font-size: 30px;
+}
+.terms-cond .section-copy{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+.terms-cond .section-copy h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 30px;
+}
+.terms-cond .section-copy p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.priv-pol ul, .priv-pol li{
+    list-style: unset;
+    padding: revert;
+}
