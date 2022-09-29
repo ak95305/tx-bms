@@ -78,6 +78,15 @@
 }
 
 
+.culture .sec-heading, .opport .sec-heading{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.opport{
+    background: url(../assets/ques-bg-low.png);
+}
+
+
 .contact-form input, .contact-form textarea{
     border-radius: .375rem !important;
 }

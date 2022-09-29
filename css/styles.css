@@ -41,7 +41,7 @@ input, textarea {
 a.prm-btn {
     background: url(../assets/button-bg.jpg);
     background-position: -20px -70px;
-    background-size: 150%;
+    background-size: 200%;
     background-repeat: no-repeat;
     color: #fff;
     display: inline-block;
@@ -147,7 +147,8 @@ header .hamburger {
     background: url(../assets/headerbg.png), #f1f1f1;
     background-position: right bottom;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-size: contain;
+    height: 90vh;
     position: relative;
 }
 
@@ -231,7 +232,7 @@ header .hamburger {
 
 /* testimonials */
 .testimonial-sec {
-    background-image: url(https://bmsbuildingservice.com/wp-content/themes/bms/dist/images/backgrounds/reviews-background.jpg);
+    background-image: url(../assets/test-bg.jpg.png);
     background-size: cover;
     position: relative;
     background-attachment: fixed;
@@ -245,13 +246,16 @@ header .hamburger {
 .testimonial-sec .sec-heading {
     text-align: left;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .testimonial-sec p {
+    color: #fff;
     font-size: 18px;
 }
 
 .testimonial-sec span {
+    color: #fff;
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
@@ -263,11 +267,14 @@ header .hamburger {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid #333;
+    border: 1px solid #fff;
     font-size: 30px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: transparent;
 }
 
 .testimonial-sec .owl-theme .owl-dots,
@@ -607,10 +614,10 @@ footer a{
 
 
 @media only screen and (min-width: 1400px){
-    .hero-sec{
+    /* .hero-sec{
         background-size: cover;
         background-position: right 230px;
-    }
+    } */
 }
 
 
