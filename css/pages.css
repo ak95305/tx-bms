@@ -26,9 +26,13 @@
 .program-sec p{
     max-width: 800px;
     margin: auto;
-    text-align: center;
+    text-align: left;
 }
 
+.program-sec .sec-heading{
+    text-align: left;
+    margin-bottom: 30px;
+}
 
 .contact-form input, .contact-form textarea{
     border-radius: .375rem !important;

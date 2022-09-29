@@ -19,6 +19,7 @@ a:hover,
 a:focus {
     text-decoration: none;
     cursor: pointer;
+    color: unset;
 }
 
 img {
@@ -38,11 +39,19 @@ input, textarea {
 }
 
 a.prm-btn {
-    background: #8FAB50;
+    background: url(../assets/button-bg.jpg);
+    background-position: -20px -70px;
+    background-size: 150%;
+    background-repeat: no-repeat;
     color: #fff;
     display: inline-block;
     padding: 10px 25px;
     border-radius: 30px;
+    transition: background-position linear .2s;
+}
+a.prm-btn:hover{
+    background-position: 0 -50px;
+    transition: background-position linear .2s;
 }
 
 .sec-heading {
