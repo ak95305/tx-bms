@@ -597,7 +597,12 @@ footer a{
 
 
 
-
+@media only screen and (min-width: 1400px){
+    .hero-sec{
+        background-size: cover;
+        background-position: right 230px;
+    }
+}
 
 
 @media only screen and (max-width: 991px) {
