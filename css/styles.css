@@ -305,7 +305,7 @@ header .hamburger {
 
 
 /* service excellence */
-.excel-sec {
+/* .excel-sec {
     padding: 100px 0;
     background-image: url(../assets/ques-bg.png);
     background-repeat: no-repeat;
@@ -434,13 +434,13 @@ header .hamburger {
     position: absolute;
     transform: translate(50%, 0);
 }
-
+ */
 
 
 
 
 /* country operate */
-.operate-sec {
+/* .operate-sec {
     background: url(https://bmsbuildingservice.com/wp-content/themes/bms/dist/images/backgrounds/background-line-paths.svg), #f1f1f1;
 }
 
@@ -506,13 +506,13 @@ header .hamburger {
     transform: translateY(0);
     opacity: 1;
     transition: all ease .2s;
-}
+} */
 
 
 
 
 /* question section */
-.question-sec .left-box {
+/* .question-sec .left-box {
     padding: 70px 30px;
     background-image: url(../assets/ques-bg.png);
     background-repeat: no-repeat;
@@ -537,7 +537,7 @@ header .hamburger {
 .question-sec .sec-heading {
     text-align: left;
     font-size: 30px;
-}
+} */
 
 
 
