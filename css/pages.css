@@ -21,6 +21,9 @@
 .about-imgs{
     margin-top: 40px;
 }
+.who-we .sec-heading{
+    margin-bottom: 20px;
+}
 
 /* 
 .program-sec p{
@@ -131,4 +134,38 @@
 .priv-pol ul, .priv-pol li{
     list-style: unset;
     padding: revert;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 991px){
+    .hero-about{
+        padding-top: 80px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .hero-about{
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .hero-about h1{
+        font-size: 35px;
+    }
+    .hero-about p{
+        font-size: 16px;
+    }
+    .cont-det{
+        margin-top: 20px;
+    }
+    .serv-imgs{
+        grid-template-columns: 1fr 1fr;
+    }
+    .serv-imgs img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
