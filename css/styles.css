@@ -756,7 +756,8 @@ footer a{
     }
 
     .testimonial-sec {
-        background-image: linear-gradient(to bottom, #9a9592 0, #dddee2 100%);
+        /* background-image: linear-gradient(to bottom, #9a9592 0, #dddee2 100%); */
+        background-position: right;
     }
 
     .sec-heading {
