@@ -87,6 +87,9 @@
 }
 .opport{
     background: url(../assets/ques-bg-low.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
