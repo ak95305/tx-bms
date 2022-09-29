@@ -89,4 +89,5 @@ let navMenu = document.querySelector("header nav");
 hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
     hamburger.classList.toggle("active");
+    document.body.classList.toggle('overflow-hidden');
 });
