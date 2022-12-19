@@ -1,10 +1,68 @@
+<?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require_once "phpmailer/vendor/autoload.php";
+
+if (isset($_POST['cont-submit'])) {
+    
+    $inquiry = $_POST['inquiry'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $subject = "Inquiry Mail - " . $inquiry;
+
+
+    $html = '
+    <html> 
+    <head> 
+        <title>Inquiry Mail</title> 
+    </head> 
+        <body> 
+            <div>
+                <b>Inquiry Type: </b> '. $inquiry .'<br><br>
+                <b>Name: </b>' . $name . '<br><br>
+                <b>Email Address: </b>' .  $email . '<br><br><br><br>'
+                 .  $message . '<br><br><br><br>
+                 From <br><b>'.$name.'</b>
+            </div>
+        </body> 
+    </html> 
+';
+
+
+
+    $mail = new PHPMailer(true);
+    $mail->From = "info@tridentbm.com";
+    $mail->FromName = 'Trident Building Maintenance';
+    $mail->addAddress("info@tridentbm.com", "Trident Building Maintenance");
+    $mail->isHTML(true);
+    $mail->Subject = $subject;
+    $mail->Body = $html;
+    $show = true;
+    try{
+        if($mail->send()){
+            $success = true;
+        } else {
+            $success = false;
+        }
+    } 
+    catch (Exception $e) {
+        $success = false;
+    }
+
+
+}
+?>
+
+
 <!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trident Building Maintenance</title>
+    <title>Txley</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- bootstrap -->
@@ -52,8 +110,8 @@
                         <li>
                             <a href="services.html">Services</a>
                         </li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="career.html">Careers</a></li>
+                        <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="hamburger">
@@ -91,35 +149,35 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <form action="" class="mt-3">
+                    <form action="" class="mt-3" method="post">
                         <div class="mb-3">
                             <label for="enquiry" class="form-label">Area of inquiry</label>
-                            <select class="form-select" id="enquiry" name="enquiry">
+                            <select class="form-select" id="inquiry" name="inquiry">
                                 <option selected>Area of inquiry</option>
-                                <option value="1">Facility Management</option>
-                                <option value="2">Restoration</option>
-                                <option value="3">Architectural</option>
-                                <option value="3">Supplies</option>
+                                <option value="Facility Management">Facility Management</option>
+                                <option value="Restoration">Restoration</option>
+                                <option value="Architectural">Architectural</option>
+                                <option value="Supplies">Supplies</option>
                             </select>
                         </div>
 
 
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="name" placeholder="Name*">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name*">
                         </div>
 
 
                         <div class="mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="Email*">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email*">
                         </div>
 
 
                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Message" id="message"></textarea>
+                            <textarea class="form-control" placeholder="Message" id="message" name="message"></textarea>
                             <label for="message">Message*</label>
                         </div>
 
-                        <a href="" class="prm-btn mt-3">Submit</a>
+                        <button class="prm-btn mt-3" type="submit" name="cont-submit">Submit</button>
 
                     </form>
                 </div>
@@ -127,16 +185,16 @@
                     <div class="cont-det">
                         <span class="mb-3 d-block">
                             <b>Phone Number:</b><br>
-                            <a href="tel:2067659800">(206)765-9800</a>
+                            <a href="tel:360-545-4433">360-545-4433</a>
                         </span>
                         <span class="mb-3 d-block">
                             <b>Email</b><br>
-                            <a href="mailto:info@tridentbm.com">info@tridentbm.com</a>
+                            <a href="mailto:info@txley.com">info@txley.com</a>
                         </span>
-                        <!-- <span class="mb-3 d-block">
+                        <span class="mb-3 d-block">
                             <b>Address</b><br>
                             <a href="https://goo.gl/maps/eGLsJnSTAG1mDCdt8">139 E. Fairhaven Avenue <br>Burlington, WA 98233</a>
-                        </span> -->
+                        </span>
                     </div>
                 </div>
             </div>
@@ -171,15 +229,14 @@
                         <li><a href="services.html">Supplies</a></li>
                     </ul>
                 </div>
-                <!-- <div class="col-md-3 mt-4">
-                    <h4>Contact</h4>
-                    <p><a href="tel:2067659800">(206)765-9800</a></p>
-                </div> -->
+                <div class="col-md-3 mt-4">
+                    <h4>Address</h4>
+                    <p>139 E. Fairhaven Avenue Burlington, WA 98233<br>360-545-4433</p>
+                </div>
             </div>
             <div class="mail-social">
                 <div class="mail-link">
-                    <a href="tel:2067659800">2067659800</a><br>
-                    <a href="mailto:info@tridentbm.com">info@tridentbm.com</a>
+                    <a href="mailto:info@txley.com">info@txley.com</a>
                 </div>
                 <div class="social-icons">
                     <i class="fa-brands fa-linkedin-in me-2"></i>
@@ -194,7 +251,7 @@
                     </ul>
                 </div>
                 <div class="rght-res">
-                    <span>© 2022 Trident Building Maintenance. ALL RIGHTS RESERVED</span>
+                    <span>© 2022 TXBMS. ALL RIGHTS RESERVED</span>
                 </div>
             </div>
         </div>
