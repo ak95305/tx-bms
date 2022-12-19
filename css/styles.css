@@ -39,7 +39,7 @@ input, textarea {
 }
 
 a.prm-btn {
-    background: url(../assets/button-bg.jpg);
+    background: #95C22B;
     background-position: -20px -70px;
     background-size: 200%;
     background-repeat: no-repeat;
@@ -148,7 +148,7 @@ header .hamburger {
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 90vh;
+    height: 540px;
     position: relative;
 }
 
